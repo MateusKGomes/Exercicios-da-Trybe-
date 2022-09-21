@@ -1,2 +1,2 @@
-# Exerc-cios-da-Trybe-
+# Exercicios-da-Trybe-
 Exercícios da Trybe 
