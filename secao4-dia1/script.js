@@ -20,10 +20,26 @@
 //     console.log('Você não tem um triângulo.')
 // }
 
-let numero1 = 20;
-let numero2 = 17;
-let numero3 = 13;
+// let lotteryNumber = [];
 
-if (numero1 % numero2 === 0 && numero1 % numero3 == 0 ) {
-    console.log(true);
-} else if ( )
+// for (let index = 0; index < 6; index += 1); {
+//     lotteryNumber.push(Math.ceil(Math.random() * 60)) 
+// }
+
+// let firstGame = [13, 26, 11, 38, 53, 41];
+// let numberOfHits = 0;
+// let hits = [];
+
+// for (let indexlottery = 0; indexlottery < lotteryNumber.length; indexlottery += 1) {
+//     for (let indexGame = 0; indexGame < firstGame.length; indexGame += 1) {
+// if (lotteryNumber[indexlottery] === firstGame[indexGame]) {
+// numberOfHits.push += 1;
+//  hits.push(lotteryNumber[indexlottery])
+//         }
+//     }
+// }
+// console.log('Numeros sorteados',  lotteryNumber);
+// console.log('Numeros apostados', firstGame);
+// console.log('Numeros acertados', numberOfHits);
+// console.log('Quantidade de acertos', hits);
+
