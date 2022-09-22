@@ -9,3 +9,13 @@
 // } else {
 //     console.log('iza é a mais jovem, ela tem '  +  iza +  ' anos.') 
 // }
+
+let a = 16;
+let b = 89;
+let c = 90;
+
+if (Number[a + b + c == 180]) {
+    console.log('Você tem um triângulo perfeito.')
+} else {
+    console.log('Você não tem um triângulo.')
+}
