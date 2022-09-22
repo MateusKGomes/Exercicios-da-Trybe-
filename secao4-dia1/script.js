@@ -43,3 +43,16 @@
 // console.log('Numeros acertados', numberOfHits);
 // console.log('Quantidade de acertos', hits);
 
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]; 
+let result = 0;
+for (let indexNumbers = 0; indexNumbers < numbers.length; indexNumbers += 1) {
+result += (numbers[indexNumbers]) 
+}
+
+
+let avarage = result / numbers.length;
+if (avarage > 20){
+    console.log('Seu número é maior que 20.')
+} else {
+    'Seu número é menor que 20'
+}
