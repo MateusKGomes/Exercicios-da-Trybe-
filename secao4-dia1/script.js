@@ -131,3 +131,9 @@
 // }
 // Academia de lógica: 
 
+//==================================================
+
+// let contador = 0; (conta qunatos eu consigo comprar);
+// let quaisElementos = []; (apresenta quais elementos voce consegueria comprar);
+
+//===================================================
