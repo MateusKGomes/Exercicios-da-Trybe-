@@ -113,15 +113,21 @@
 // console.log(numbers);
 
 
-let numbers = [
-    0,  1,  2,  3,  4,  5,  6,  7,
-    8,  9, 10, 11, 12, 13, 14, 15,
-   16, 17, 18, 19, 20, 21, 22, 23,
-   24, 25
- ];
+// let numbers = [
+//     0,  1,  2,  3,  4,  5,  6,  7,
+//     8,  9, 10, 11, 12, 13, 14, 15,
+//    16, 17, 18, 19, 20, 21, 22, 23,
+//    24, 25
+//  ];
 
-for(index = 0; index < numbers.length; index += 1 ) {
-    console.log(numbers[index]) / 2; 
-};
+// for(index = 0; index < numbers.length; index += 1 ) {
+//     console.log(numbers[index]) / 2; 
+// };
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// for (index = 0; index < numbers.length; index += 1) {
+// console.log(index +' ' + [ ' Oi eu sou o index. '] + numbers[index] + ' e eu sou o numbers[index]');  
+// }
+// Academia de lógica: 
 
