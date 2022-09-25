@@ -137,3 +137,11 @@
 // let quaisElementos = []; (apresenta quais elementos voce consegueria comprar);
 
 //===================================================
+
+let numbers =[];
+let divisiveis = 0;
+for(let index = 0; index <= 150; index += 1) {
+}
+
+console.log(divisiveis);
+
