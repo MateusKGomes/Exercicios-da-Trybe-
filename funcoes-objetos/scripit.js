@@ -37,23 +37,7 @@
 //     };
 // }   
 // console.log(verificaPalindrome('arara', 'desenvolvimento'));
- //==============================================================
-
-// function numbers(reviewNumbers){
-//     let biggestIndex = 0;
-// }
-//     for(let index =0; index <= reviewNumbers.length; index += 1){
-//         if(reviewNumbers[index].length > reviewNumbers.length) {
-//             biggestIndex += 1;
-
-//         }
-//     }
-
-// reviewNumbers = [2, 3, 6, 7, 10, 1];
-
-
-// console.log(biggestIndex);
-
+ //=============================================================
 //==============================================================
 // let info = {
 //     personagem: 'Margarida',
@@ -95,4 +79,29 @@
 // console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.');
 
 
+//==============================================================
 
+// function indiceDoMaior(numeros) {
+//   let indiceMaior = 0;
+//   for (let index = 0; index < numeros.length; index += 1) {
+//     if (numeros[indiceMaior] < numeros[index]) {
+//       indiceMaior = index;
+//     }
+//   }
+
+//   return indiceMaior;
+// }
+
+// console.log(indiceDoMaior([2, 3, 6, 7])); //4
+
+//==============================================================
+
+// function sumFunctions(numbers) {
+// let sumResult =  0;
+// for (let index = 0; index < numbers.length; index += 1){
+//   sumResult += numbers[index];
+//   }
+//   return sumResult;
+// } 
+
+// console.log(sumFunctions([0, 24, 12, 13, 5]));
