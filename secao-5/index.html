@@ -55,40 +55,47 @@
       }
     </style>
   </head>
-  <main id="paiDoPai">
-    <section id="pai">
-      <section id="primeiroFilho"></section>
-      <section id="elementoOndeVoceEsta">
-        <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
-      </section>
-      Atenção!
-      <section id="terceiroFilho"></section>
-      <section id="quartoEUltimoFilho"></section>
-    </section>
-  </main>
+ 
   
   <body>
 
 
     <script>
-      function appendBrother (){
+      function createFirst () {
+        let elementH1 = document.createElement('h1');
+        elementH1.id = 'primeiroElemento';
+        elementH1.innerHTML = 'Exercício - JavaScript DOM';
+        document.body.appendChild(elementH1);
         
-        let pai = document.getElementById('pai');
-        let addBrotherForBrother = document.createElement('section');
-        addBrotherForBrother.id = 'Criando o irmão para o irmão, req1';
-        pai.appendChild(addBrotherForBrother);
       }
-      appendBrother();
-      //=====================================
-      function createFirstSon ()  {
-        let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
-        let firstSon = document.createElement('section');
-        firstSon.id = 'filho direto de elementoOndeVoceEsta';
-        elementoOndeVoceEsta.appendChild(firstSon);
-      }
-      createFirstSon ();
-      //=====================================
+      createFirst();
+
+
+
+      // function appendBrother (){
+        
+      //   let pai = document.getElementById('pai');
+      //   let addBrotherForBrother = document.createElement('section');
+      //   addBrotherForBrother.id = 'Criando o irmão para o irmão, req1';
+      //   pai.appendChild(addBrotherForBrother);
+      // }
+      // appendBrother();
+      // //=====================================
+      // function createFirstSon ()  {
+      //   let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+      //   let firstSon = document.createElement('section');
+      //   firstSon.id = 'filho direto de elementoOndeVoceEsta';
+      //   elementoOndeVoceEsta.appendChild(firstSon);
+      // }
+      // createFirstSon ();
+      // //=====================================
+      // function firstSonForFirstSon () {
+      //   let primeiroFilho = document.getElementById('primeiroFilhoDoFilho');
+      //   let filhoPrimeiroFilho = document.createElement('section');
+      //   filhoPrimeiroFilho.id = 'primeiroFilhoPrimeiroFilho';
+      //   primeiroFilho.appendChild(filhoPrimeiroFilho);
+      // }
+      // firstSonForFirstSon();
     </script>
   </body>
 </html>
