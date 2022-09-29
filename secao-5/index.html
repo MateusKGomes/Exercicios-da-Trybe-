@@ -55,23 +55,75 @@
       }
     </style>
   </head>
- 
+  
   
   <body>
 
 
     <script>
+
       function createFirst () {
         let elementH1 = document.createElement('h1');
-        elementH1.id = 'primeiroElemento';
+        elementH1.className = 'primeiroElemento';
         elementH1.innerHTML = 'Exercício - JavaScript DOM';
         document.body.appendChild(elementH1);
-        
       }
       createFirst();
+      function addMain() {
+        let elementMain = document.createElement('main');
+        elementMain.className = 'main-content';
+        elementMain.innerHTML = 'Eu sou a main'
+        document.body.appendChild(elementMain);
+      }
+      addMain();
+      function firstSection(){
+        let sonMain = document.getElementsByClassName('main-content');
+        let firstSectionSon = document.createElement('section');
+        firstSectionSon.className = 'center-content';
+        sonMain.appendChild(firstSectionSon);
+      }
+      firstSection();
 
+      function createParagraph (){
+        let sonSection = document.getElementsByClassName('center-content');
+        let paragraph = document.createElement('p');
+        paragraph.className =  'paragraphSection';
+        sonSection.appendChild(paragraph);
+      }
+      createParagraph();
+      function secondSection (){
+        let sonMain = document.getElementsByClassName('main-content');
+        let secondSonSection = document.createElement('section');
+        secondSonSection.className = 'left-content';
+        sonMain.appendChild(secondSonSection);
+      }
+      secondSection();
+      function thirtSection(){
+        let sonMain = document.getElementsByClassName('main-content');
+        let thirtSectionSon = document.createElement('section');
+        thirtSectionSon.className = 'right-content';
+        sonMain.appendChild(thirtSectionSon);
+      }
+      thirtSection();
+      function imgSrc(){
+        let secondSection = document.getElementsByClassName('left-content');
+        let elementImg = document.createElement('img');
+        elementImg.className = 'small-image';
+        elementImg.src = 'https://picsum.photos/200'
+        secondSection.appendChild(elementImg);
+      }
+      imgSrc();
+      function createUnordered (){
+        let thirtSection = document.getElementsByClassName('right-content');
+        let unorderedSonSection = document.createElement('ul');
+        unorderedSonSection =  ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+        unorderedSonSectio.className = 'unorderedClassName'
+        thirtSection.appendChild(unorderedSonSection);        
+      }
+      createUnordered();
 
-
+      //================================================
       // function appendBrother (){
         
       //   let pai = document.getElementById('pai');
