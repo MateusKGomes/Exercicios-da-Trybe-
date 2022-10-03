@@ -117,13 +117,22 @@ function fridayDays (fridayArray){
 let decemberFridays = [ 4, 11, 18, 25 ];
 fridayDays(decemberFridays);
 
-function mouseCursor(){
+function mouseCursorOver(){
   let getDays = document.getElementById('days');
   getDays.addEventListener('mouseover', function(event){ 
     event.target.style.fontSize = '30px';
     event.target.style.fontWeight = '600'; 
-  })
-
-
+  });
 }
-mouseCursor();
+
+function mouseCursorOut(){
+  let getDays = document.getElementById('days');
+  getDays.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = '20px'
+    event.target.style.fontWeight = '200'
+
+  });
+};
+
+mouseCursorOver();
+mouseCursorOut();
