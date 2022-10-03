@@ -136,3 +136,28 @@ function mouseCursorOut(){
 
 mouseCursorOver();
 mouseCursorOut();
+
+function newTaskSpan(task) {
+  let getTask = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = task;
+  getTask.appendChild(taskName);
+
+}
+newTaskSpan('projeto');
+
+
+
+function taskColor (changeColor) {
+  let colorCreater = document.querySelector('.my-tasks');
+  let newTask = document.createElement('div');
+
+  newTask.className = 'task';
+  newTask.style.backgroundColor = changeColor;
+  colorCreater.appendChild(newTask);
+
+}
+
+taskColor('yellow');
+
