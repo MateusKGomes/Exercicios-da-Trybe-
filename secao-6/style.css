@@ -1,0 +1,8 @@
+body{
+    background-color: rgba(204, 203, 203, 0.986);
+}
+#title{
+    color: black;
+    align-items: center;
+    margin-left: 40%;
+}
