@@ -13,7 +13,7 @@
         <section>
             <h2>Informações pessoais: </h2>
     <label for="name">Digite seu nome completo: </label>
-    <input type="text" name="YourName" id="name" maxlength="40" minlength="10" required>
+    <input type="text" name="YourName" id="name" maxlength="40" minlength="10" required autocomplete="off">
         </section>  
         <section>
     <label for="email">Digie seu e-mail: </label>
@@ -43,16 +43,22 @@
         </section>
         <section>
             <h3>Por que você deveria ganhar a viagem?</h3>
-            <textarea name="" id="" cols="40" rows="10"></textarea>
+            <textarea name="" id="" cols="40" rows="10" maxlength="500"></textarea>
         </section>
         <section>
             <label for="date">Qual é a melhor data? </label>
             <input type="date" id="date">
         </section>
+            <section>
+                <h3>Gostaria de receber mais oportunidades oferecidas pela Trybe?</h3>
+                <label for="checkBox">Concordo</label>
+                <input type="checkbox">
+            </section>
         <section>
-            <label for="submit">Enviar</label>
-            <input type="submit">
+            <label for="submit" id="submit">Enviar</label>
+            <input type="submit" name="submit" id="submit">
         </section>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
