@@ -9,21 +9,22 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="text-bg-success p-3"> <h1  class="display6">Formulário</h1></header>
+    <header class="header"  class="text-bg-success p-3"> <h1  class="display6">Formulário</h1>
+    </header>
     <form action="" method="get" id="myForm" class="date">
+    <section class="namePass">
+        <label for="name">Digite seu nome completo: </label>
+        <input type="text" name="YourName" id="name" maxlength="40" minlength="10" required autocomplete="off" class="form-control">
+
+        <label for="email">Digie seu e-mail: </label>
+        <input type="email" id="email" name="email" autocomplete="off" minlength="10" maxlength="50" class="form-control">
+    
+        <label for="password">Digite sua senha: </label>
+        <input type="password" name="senha" id="password" class="form-control">
+        
+    </section>  
     <section>
-    <label for="name">Digite seu nome completo: </label>
-    <input type="text" name="YourName" id="name" maxlength="40" minlength="10" required autocomplete="off" class="form-control">
-        </section>  
-        <section>
-    <label for="email">Digie seu e-mail: </label>
-    <input type="email" id="email" name="email" autocomplete="off" minlength="10" maxlength="50" class="form-control">
-        </section>
-        <section>
-            <label for="password">Digite sua senha: </label>
-            <input type="password" name="senha" id="password" class="form-control">
-        </section>
-        <section>
+        
             <h5  class="text-bg-success p-3">Um pouco sobre você: </h5> <br>
             <h6 class="text-bg-success p-3">Qual o seu destino favorito?</h6>
             <label for="destiny1">Cidade</label>
@@ -34,11 +35,11 @@
             <input type="radio" name="destiny" id="destiny3" >
             <label for="destiny4">Montanha</label>
             <input type="radio" name="destiny" id="destiny4" >
-        </section>
-        <section>
+    </section>
+    <section>
             <h3 class="text-bg-success p-3">Por que você deveria ganhar a viagem?</h3>
             <textarea name="" id="" cols="40" rows="10" maxlength="500" class="form-control" ></textarea>
-        </section>
+    </section>
  
         <section class="form-floating">
             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">

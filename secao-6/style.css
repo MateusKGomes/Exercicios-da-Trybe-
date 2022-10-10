@@ -1,12 +1,40 @@
 body{
     background-color: rgba(255, 255, 255, 0.986);
     margin: 5%;
+    width: 90%;
+
 }
 #title{
     color: black;
     align-items: center;
     margin-left: 40%;
 }
-h1 {
- text-align: center;
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    width: 90%;
+
+}
+.arguments{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+
+}
+.namePass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 20px;
+
+}
+.text-bg-success{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
 }
