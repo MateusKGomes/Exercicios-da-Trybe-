@@ -13,20 +13,19 @@ body {
   background-color: #5C687C;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;   
+  justify-content: space-between;
   height: 70px;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
+  flex-basis: 268px;
 }
 
 .menu-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: stretch;
+  justify-content: flex-end;
 }
 
 .menu-container ul {
@@ -46,4 +45,54 @@ body {
     align-self: center;
     padding: 2px 130px;
 
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  flex-basis: 10%;
+  flex-direction: column;
+  flex-grow: 1;
 }
