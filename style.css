@@ -1,105 +1,78 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
-  font-family: 'Ubuntu';
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(247, 175, 175);
 }
-
 .header-container {
-  background-color: #5C687C;
   display: flex;
-  max-width: 100%;
-}
-
-.logo-container {
-  display: flex;
-  flex-basis: 268px;
   justify-content: center;
 }
-
-.menu-container {
-  display: flex;
-  flex-basis: 500px;
-  flex-grow: 1;
-  order: 1;
-  align-items: center;
-}
-
-.menu-container ul {
+.nav {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+}
+.title {
+  font-size: xx-large;
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+}
+.list {
+  max-width: 100%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main-content {
+  background-color: rgb(148, 13, 108);
+  margin-left: 40px;
+  max-width: 92%;
+  padding: 0px 40px;
+}
+.content {
+  margin-left: 15px;
+  max-width: 92%;
+  padding: 0px 40px;
 }
 
-.menu-container li {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 1.3rem;
-    list-style: none;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(84, 174, 180);
+    max-width: 100%;
+  }
+  .header-container {
     display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    max-width: 70%;
-}
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.movie-container {
-  display: flex;
-  flex-direction: column;
-  padding: 25px 50px;
-}
-
-.movie-container h2 {
-  margin: 40px 0;
-  text-align: center;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.card-container div {
-  align-items: center;
-  background-color: #5C687C;
-  max-width: 100%;
-  border: black solid 1px;
-  display: flex;
-  height: 150px;
-  justify-content: center;
-  margin: 10px;
-  flex: 16%;
-}
-
-.aside-container {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  align-items: center;
-  flex-basis: 350px;
-  padding-top: 60px;
-  
-}
-
-.aside-container h3, h4 {
-  margin-bottom: 10px;
-  text-align: center;
-  display: flex;
-  text-align: center;
-}
-
-.aside-container p {
-  margin: 20px;
-  display: flex;
-  /* text-align: center; */
-  flex-direction: row;
-  align-items: flex-start;
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  .title {
+    font-size: large;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: flex-start;
+  }
+  .list {
+    list-style: none;
+    max-width: 60%;
+    padding: 0px 40px;
+  }
+  .main-content {
+    background-color: orange;
+    margin-left: 15px;
+    max-width: 80%;
+    padding: 0px 40px;
+  }
+  .content {
+    margin-left: 15px;
+    max-width: 80%;
+    padding: 0px 40px;
+  }
 }
