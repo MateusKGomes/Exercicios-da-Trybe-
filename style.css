@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+  max-width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  flex-basis: 268px;
+  justify-content: center;
+}
+
+.menu-container {
+  display: flex;
+  flex-basis: 500px;
+  flex-grow: 1;
+  order: 1;
+  align-items: center;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    max-width: 70%;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  max-width: 100%;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  flex: 16%;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  flex-basis: 350px;
+  padding-top: 60px;
+  
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 20px;
+  display: flex;
+  /* text-align: center; */
+  flex-direction: row;
+  align-items: flex-start;
+}
