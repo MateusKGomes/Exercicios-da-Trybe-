@@ -1,22 +1,39 @@
- const testingScope = (escopo) => {
-    if (escopo === true) {
-      let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-      ifScope = `${ifScope}  ótimo, fui utilizada no escopo!`;
-      console.log(ifScope);
-    } else {
-      const elseScope = 'Não devo ser utilizada fora do meu escopo (else)';
-      console.log(elseScope);
+const btnSend = document.getElementById('btn-send');
+const inputProduto = document.querySelector('#input-produto');
+const listaCompras = document.querySelector('#lista-de-compras');
+const btnClear = document.querySelector('#btn-clear');
+
+
+const colocarItemLista = (text) => {
+const createLi = document.createElement('li')
+createLi.classList.add('item-lista');
+createLi.innerHTML = text;
+listaCompras.appendChild(createLi);
+}
+
+const adicionaItemStorage = () => {
+    const itens = document.getElementsByClassName('item-lista');
+    const arrItens = [];
+    for (const item of itens) {
+        arrItens.push(item.innerText);
     }
-  }
+    localStorage.setItem('itens', JSON.stringify(arrItens));
+}
 
-  testingScope(true);
+const criarItem = () => {
+const inputValue = inputProduto.value;
+colocarItemLista(inputValue);
+inputProduto.value = '';
+adicionaItemStorage();
+}
+btnSend.addEventListener('click', criarItem);
 
-  const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-  oddsAndEvens.sort(function(a, b){
-    if(a > b) return 1;
-    if(a< b) return -1;
-    return 0;
-
-  });
-  console.log(`Os numeros ${oddsAndEvens} se encontram em ordem crescente!`);
-
+ const retornaStorage = () => {
+    if(localStorage.itens){
+    const arrItens = JSON.parse(localStorage.getItem('itens'));
+    for (let index = 0; index < arrItens.length; index++) {
+        colocarItemLista(arrItens[index]);
+        }
+    }
+}
+retornaStorage();
