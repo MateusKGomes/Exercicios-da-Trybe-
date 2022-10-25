@@ -13,9 +13,33 @@
 //   };
 
 // console.log(newEmployees(employeeGenerator)); 
-const checkNumbers = (myNumber, number) => myNumber === number; 
-const randomNumber = (myNumber, callBack ) => {
-  const number = Math.floor((Math.random() * 5) + 1);
-  return callBack(myNumber, number) ? 'You won!' : `Try again, drawn number is ${number}`;
-};
-console.log(randomNumber(3, checkNumbers));
+// const checkNumbers = (myNumber, number) => myNumber === number; 
+// const randomNumber = (myNumber, callBack ) => {
+//   const number = Math.floor((Math.random() * 5) + 1);
+//   return callBack(myNumber, number) ? 'You won!' : `Try again, drawn number is ${number}`;
+// };
+// console.log(randomNumber(3, checkNumbers));
+
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studantAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const compareAnswers = (rightAnswers, studantAnswers) => {
+      if (rightAnswers === studantAnswers) {
+        return  1;
+      } else if (studantAnswers === 'N.A') {
+        return  0;
+      } else if (rightAnswers !== studantAnswers) {
+        return -1;
+      };
+      };
+
+    const countPoints = (rightAnswers, studentAnswers, action) => {
+      let counter = 0;
+      for (let index = 0; index < rightAnswers.length; index += 1) {
+        const actionReturn = action(rightAnswers[index], studentAnswers[index]);
+        counter += actionReturn;
+      }
+      return `Resultado final: ${counter} pontos`;
+    };
+    
+console.log(countPoints(rightAnswers, studantAnswers, compareAnswers));
