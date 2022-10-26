@@ -129,3 +129,29 @@ const getNameBook = () => {
 // console.log(getNameBook()); 
 
 
+const  booksOrderedByReleaseYearDesc = () => {
+  return books.sort(( bookA, bookB) => bookB.releaseYear - bookA.releaseYear );
+};
+// console.log(booksOrderedByReleaseYearDesc());
+
+const  everyoneWasBornOnSecXX = () => {
+  return books.every((book) => ( 
+    book.author.birthYear > 1900 && book.author.birthYear <= 2000));
+}
+// console.log(everyoneWasBornOnSecXX());
+
+
+
+function someBookWasReleaseOnThe80s() {
+  return books.some((book) => ( 
+    book.releaseYear > 1980 &&  book.releaseYear< 1990));
+} 
+// console.log(someBookWasReleaseOnThe80s());   
+
+function authorUnique() {
+  return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear)
+      && (bookSome.author.name !== book.author.name)));
+}
+console.log(authorUnique());
