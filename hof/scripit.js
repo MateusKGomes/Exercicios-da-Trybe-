@@ -107,7 +107,25 @@ const books = [
     },
   ];
   
-  const authorBornIn1947 = (number) => {
-    return books.find((book) => book.author.birthYear === 1947).author.name
+  const authorBornIn1947 = (book) => {
+    return books.find((book) => book.author.birthYear === 1947).author.name;
   };
-  console.log(authorBornIn1947());
+  // console.log(authorBornIn1947());
+
+  const  smallerName = (book) => {
+    let nameBook;
+    books.forEach(book => {
+    if (!nameBook || book.name.length < nameBook.length) {
+      nameBook = book.name;
+    }
+    });
+    return nameBook;
+  }
+  // console.log(smallerName());
+
+const getNameBook = () => {
+  return books.find(book => book.name.length === 26);
+}
+// console.log(getNameBook()); 
+
+
