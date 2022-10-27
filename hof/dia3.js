@@ -77,7 +77,7 @@ const addAge = () => {
 // console.log(addAge());
 
 function fantasyOrScienceFiction() {
-    return books.filter((book) => book.genre === 'Ficção Científica' || book.genre ===  'Fantasia')
+    return books.filter((book) => book.genre === 'Ficção Científica' || book.genre ===  'Fantasia');
 };
 // console.log(fantasyOrScienceFiction() );
 
@@ -88,4 +88,19 @@ function oldBooksOrdered(year) {
 }
 // console.log(oldBooksOrdered(2022));
 
+
+function fantasyOrScienceFictionAuthors() {
+return books.filter((book) => book.genre === 'Ficção Científica' || book.genre ===  'Fantasia')
+.map((book) => book.author.name)
+.sort()
+};
+// console.log(fantasyOrScienceFictionAuthors());
+
+function oldBooks(year) {
+  const currentYear = year;
+  return books.filter((book) => currentYear - book.releaseYear > 60 )
+  .sort((obj1, obj2) =>  obj1.releaseYear- obj2.releaseYear)
+  .map((book) => book.name);
+}
+console.log(oldBooks(2022));
 
