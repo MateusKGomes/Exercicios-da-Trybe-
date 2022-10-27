@@ -60,18 +60,18 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  // Adicione o código do exercício aqui:
 
-  function formatedBookNames() {
-    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
+const newArray = () => {
+  return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`) 
 }
-// console.log(formatedBookNames());
+// console.log(newArray());
 
-const generateNewArray = () => {
-    return books.map((book) => book.age);
-
-    // return books.map((book) => book.author.name);
-
-};
-console.log(generateNewArray());
+const addAge = () => {
+  return books.map((book)=> ({
+    author: book.author.name,
+    age:  book.releaseYear - book.author.birthYear 
+    
+  }))
+  .sort((obj1, obj2) => obj1.age - obj2.age);
+}
+console.log(addAge());
