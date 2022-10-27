@@ -74,4 +74,18 @@ const addAge = () => {
   }))
   .sort((obj1, obj2) => obj1.age - obj2.age);
 }
-console.log(addAge());
+// console.log(addAge());
+
+function fantasyOrScienceFiction() {
+    return books.filter((book) => book.genre === 'Ficção Científica' || book.genre ===  'Fantasia')
+};
+// console.log(fantasyOrScienceFiction() );
+
+function oldBooksOrdered(year) {
+    const currentYear = year;
+    return books.filter((book) => currentYear - book.releaseYear > 60 )
+    .sort((obj1, obj2) =>  obj1.releaseYear- obj2.releaseYear)
+}
+// console.log(oldBooksOrdered(2022));
+
+
