@@ -102,7 +102,7 @@ function oldBooks(year) {
   .sort((obj1, obj2) =>  obj1.releaseYear- obj2.releaseYear)
   .map((book) => book.name);
 }
-console.log(oldBooks(2022));
+// console.log(oldBooks(2022));
 
 
 

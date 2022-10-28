@@ -73,15 +73,59 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
+  
+  function flatten() {
+    // escreva seu código aqui
+  }
 
 
 function reduceNames() {
  return books.reduce((acc, book) => `${acc} ${book.author.name}.`, '' );
 }
-console.log(reduceNames()); 
+// console.log(reduceNames()); 
 
-const expectedResult = 43;
 
-function averageAge() {
-  // escreva seu código aqui
+const avarageAge = () => {
+  const numberOfBooks = books.length;
+  const avarageAge = books.reduce((acc, book) => (
+   acc + (book.releaseYear - book.author.birthYear)
+  ), 0)
+  return avarageAge / numberOfBooks
 }
+// console.log(avarageAge());
+
+function longestNamedBook() {
+ return books.reduce((acc, book) => {
+  if(book.length > acc.name.length){
+    return book
+}
+return acc
+
+  });
+}
+// console.log(longestNamedBook()); 
+
+
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+// const expectedResult = 20;
+
+function containsA() {
+    let count = 0;
+    names.forEach((name) => {
+      const lettersFromName = name.split('');    
+    count += lettersFromName.reduce((acc, cur) => {
+      if(cur.toLowerCase() === 'a'){
+       return  acc + 1;
+     }
+     return acc;
+
+   }, 0)
+  })
+  return count;
+ }
+console.log(containsA());
