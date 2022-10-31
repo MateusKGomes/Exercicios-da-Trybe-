@@ -79,7 +79,7 @@ const addAge = () => {
 function fantasyOrScienceFiction() {
     return books.filter((book) => book.genre === 'Ficção Científica' || book.genre ===  'Fantasia');
 };
-// console.log(fantasyOrScienceFiction() );
+console.log(fantasyOrScienceFiction() );
 
 function oldBooksOrdered(year) {
     const currentYear = year;

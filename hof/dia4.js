@@ -136,34 +136,33 @@ const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
 const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
 
 function studentAverage() {
- return nameAndAverage = students.map((student, index) => ({
+ return nameAndAverage = students.map((student, index) =>  ({
   name: student,
   avarege: grades[index].reduce((acc, cur) => acc + cur, 0) / grades[index].length,
- }))
- 
-}
-// console.log(studentAverage());
+ }));
+};
+console.log(studentAverage());
 
 
-const data = require('../data/data')
+// const data = require('../data/data');
 
-const mapCities = () => {
-  return data.cities.reduce((acc, city) => {
-    if(!acc[city.region]) {
-      acc[city.region] = [];
-    }
+// const mapCities = () => {
+//   return data.cities.reduce((acc, city) => {
+//     if(!acc[city.region]) {
+//       acc[city.region] = [];
+//     }
 
-    const findState = data.states.find((state) => state.short === city.state);
+//     const findState = data.states.find((state) => state.short === city.state);
 
-    const obj = {
-      city: city[cityName], 
-      state: findState.name,
-    };
-    acc[city.region].push(obj);
-    return acc;
-  }, {});
-}
+//     const obj = {
+//       city: city[cityName], 
+//       state: findState.name,
+//     };
+//     acc[city.region].push(obj);
+//     return acc;
+//   }, {});
+// }
 
-console.log(mapCities());
+// console.log(mapCities());
 
 
